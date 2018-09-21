@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class RandomSpawner : MonoBehaviour {
 
-    public GameObject Target1;
-    public GameObject Target2;
-    public GameObject Target3;
-    public GameObject Target4;
+    public List<GameObject> targets;
 
     public int randomTarget;
     public int randomSpawnPoint;
 
-    public Transform SpawnTest;
+    public List<Transform> Spawns;
 
     private void Start()
     {
@@ -31,22 +28,40 @@ public class RandomSpawner : MonoBehaviour {
 
     public void SpawnTarget()
     {
-        randomTarget = Random.Range(1, 5);
+        randomTarget = Random.Range(1, 3);
+        randomSpawnPoint = Random.Range(0, 4);
+
+        GameObject targey;
+
         if (randomTarget == 1)
         {
-            Instantiate(Target1, SpawnTest);
+            targey = Instantiate(targets[0], Spawns[randomSpawnPoint]);
+            SpawnChecks(targey);
         }
         if (randomTarget == 2)
         {
-            Instantiate(Target2, SpawnTest);
+            targey = Instantiate(targets[1], Spawns[randomSpawnPoint]);
+            SpawnChecks(targey);
         }
-        if (randomTarget == 3)
+    }
+
+    public void SpawnChecks(GameObject targey)
+    {
+        if(randomSpawnPoint == 0)
         {
-            Instantiate(Target3, SpawnTest);
+            targey.GetComponent<Target>().moveDirection = Target.MoveDirection.down;
         }
-        if (randomTarget == 4)
+        if (randomSpawnPoint == 1)
         {
-            Instantiate(Target4, SpawnTest);
+            targey.GetComponent<Target>().moveDirection = Target.MoveDirection.left;
+        }
+        if (randomSpawnPoint == 2)
+        {
+            targey.GetComponent<Target>().moveDirection = Target.MoveDirection.up;
+        }
+        if (randomSpawnPoint == 3)
+        {
+            targey.GetComponent<Target>().moveDirection = Target.MoveDirection.right;
         }
     }
 }

@@ -88,6 +88,7 @@ public class Target : MonoBehaviour {
         if (other.tag == "Stick")
         {
             score.GetComponent<ScoreStreak>().score += PointsRewarded;
+            Destroy(gameObject);
         }
     }
 }
