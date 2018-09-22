@@ -23,13 +23,16 @@ public class RandomSpawner : MonoBehaviour {
             yield return new WaitForSeconds(1);
             //stuff that happens every second happens here:
             SpawnTarget();
+            SpawnTarget();
+            SpawnTarget();
+            SpawnTarget();
         }
     }
 
     public void SpawnTarget()
     {
         randomTarget = Random.Range(1, 3);
-        randomSpawnPoint = Random.Range(0, 4);
+        randomSpawnPoint = Random.Range(0, 12);
 
         GameObject targey;
 
@@ -47,19 +50,19 @@ public class RandomSpawner : MonoBehaviour {
 
     public void SpawnChecks(GameObject targey)
     {
-        if(randomSpawnPoint == 0)
+        if(randomSpawnPoint == 0 || randomSpawnPoint == 1 || randomSpawnPoint == 2)
         {
             targey.GetComponent<Target>().moveDirection = Target.MoveDirection.down;
         }
-        if (randomSpawnPoint == 1)
+        if (randomSpawnPoint == 3 || randomSpawnPoint == 4 || randomSpawnPoint == 5)
         {
             targey.GetComponent<Target>().moveDirection = Target.MoveDirection.left;
         }
-        if (randomSpawnPoint == 2)
+        if (randomSpawnPoint == 6 || randomSpawnPoint == 7 || randomSpawnPoint == 8)
         {
             targey.GetComponent<Target>().moveDirection = Target.MoveDirection.up;
         }
-        if (randomSpawnPoint == 3)
+        if (randomSpawnPoint == 9 || randomSpawnPoint == 10 || randomSpawnPoint == 11)
         {
             targey.GetComponent<Target>().moveDirection = Target.MoveDirection.right;
         }
