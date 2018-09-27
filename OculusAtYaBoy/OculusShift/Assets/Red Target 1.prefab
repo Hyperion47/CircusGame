@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54765996329555144}
   - component: {fileID: 114595072669519948}
   - component: {fileID: 65948891075438364}
+  - component: {fileID: 114737952493268872}
   m_Layer: 0
   m_Name: Red Target 1
   m_TagString: Untagged
@@ -133,3 +134,15 @@ MonoBehaviour:
   KillTime: 5
   PointsRewarded: 2
   score: {fileID: 0}
+--- !u!114 &114737952493268872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1999881135335708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334ad419976f0a04abc127570c3df942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 82213426221887826, guid: ace26f78f468d8d4e8858096d70dd3c5, type: 2}

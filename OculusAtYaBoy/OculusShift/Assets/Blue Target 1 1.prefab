@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54613674013079316}
   - component: {fileID: 114799375720983354}
   - component: {fileID: 65319523089121352}
+  - component: {fileID: 114837740212352832}
   m_Layer: 0
   m_Name: Blue Target 1 1
   m_TagString: Untagged
@@ -133,3 +134,15 @@ MonoBehaviour:
   KillTime: 10
   PointsRewarded: 1
   score: {fileID: 0}
+--- !u!114 &114837740212352832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1278079421803294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334ad419976f0a04abc127570c3df942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 82213426221887826, guid: ace26f78f468d8d4e8858096d70dd3c5, type: 2}
