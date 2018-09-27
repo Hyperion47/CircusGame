@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4584707893968916}
   - component: {fileID: 33901384626079630}
   - component: {fileID: 23918514840350438}
+  - component: {fileID: 114264521334820302}
   m_Layer: 0
   m_Name: Blue Target 1
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1144043430167434}
   m_LocalRotation: {x: 0.42723268, y: 0.4272328, z: 0.56344676, w: 0.56344676}
-  m_LocalPosition: {x: 5.070385, y: 1.256, z: -11.819718}
+  m_LocalPosition: {x: 2.5241086, y: -1.4999999, z: 1.8816464}
   m_LocalScale: {x: 30, y: 1, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,3 +84,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1144043430167434}
   m_Mesh: {fileID: 4300000, guid: 20dee463bf3e08349a2dd774b9fa5ec2, type: 3}
+--- !u!114 &114264521334820302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1144043430167434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334ad419976f0a04abc127570c3df942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 0}
