@@ -24,8 +24,6 @@ public class RandomSpawner : MonoBehaviour {
             //stuff that happens every second happens here:
             SpawnTarget();
             SpawnTarget();
-            SpawnTarget();
-            SpawnTarget();
         }
     }
 
